@@ -1,62 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HNH</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on HNH</description>
+    <title>Cheat Sheet on HNH</title>
+    <link>http://localhost:1313/tags/cheat-sheet/</link>
+    <description>Recent content in Cheat Sheet on HNH</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2024, huyhunhngc</copyright>
     <lastBuildDate>Thu, 24 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hot Flow Cheatsheet</title>
       <link>http://localhost:1313/post/hotflow-cheatsheet/</link>
       <pubDate>Thu, 24 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/hotflow-cheatsheet/</guid>
       <description>&lt;h2 id=&#34;sharedflow&#34;&gt;SharedFlow&lt;/h2&gt;&#xA;&lt;h3 id=&#34;key-principles&#34;&gt;Key Principles&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A hot stream with multiple receivers receiving the same value.&lt;/li&gt;&#xA;&lt;li&gt;Useful for broadcasting values to many consumers or sharing states/events across app components.&lt;/li&gt;&#xA;&lt;li&gt;Never completes unless the entire scope is closed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;MutableSharedFlow&lt;/code&gt; allows updating state with &lt;code&gt;emit&lt;/code&gt; (suspend) or &lt;code&gt;tryEmit&lt;/code&gt; (non-suspend).&lt;/li&gt;&#xA;&lt;li&gt;Supports replay configuration and buffer overflow handling.&lt;/li&gt;&#xA;&lt;li&gt;All methods are thread-safe and can be called safely from concurrent coroutines.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;configuration-parameters&#34;&gt;Configuration Parameters&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fun&lt;/span&gt; &amp;lt;&lt;span style=&#34;color:#a6e22e&#34;&gt;T&lt;/span&gt;&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MutableSharedFlow&lt;/span&gt;(&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    replay: Int = &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    extraBufferCapacity: Int = &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    onBufferOverflow: BufferOverflow = &lt;span style=&#34;color:#a6e22e&#34;&gt;BufferOverflow&lt;/span&gt;.SUSPEND&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;sharein&#34;&gt;shareIn&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Transforms a Flow into a &lt;strong&gt;SharedFlow&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Requires a &lt;strong&gt;coroutine scope&lt;/strong&gt; as the first parameter to start collecting elements of the flow.&lt;/li&gt;&#xA;&lt;li&gt;The second parameter, &lt;strong&gt;started&lt;/strong&gt;, defines when the SharedFlow starts listening for emitted values (uses &lt;code&gt;SharingStarted&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;The third parameter, &lt;strong&gt;replay&lt;/strong&gt; (default: 0), defines how many past values are replayed to new subscribers.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;sharingstarted-options&#34;&gt;SharingStarted Options&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Eagerly&lt;/strong&gt;: Starts listening immediately and continues until the scope is canceled.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lazily&lt;/strong&gt;: Begins listening when the first subscriber appears and never stops until the scope is canceled.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;WhileSubscribed()&lt;/strong&gt;: Begins listening when the first subscriber appears and stops after a delay when the last subscriber disappears. The delay can be configured with &lt;code&gt;stopTimeoutMillis&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note on WhileSubscribed&lt;/strong&gt;: If your screen pauses (e.g., when opening a new Intent like the camera app), your &lt;code&gt;SharedFlow&lt;/code&gt; might stop emitting when there are no subscribers left. When returning to the previous screen, subscribers will reappear, potentially causing unnecessary task restarts.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archives/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>http://localhost:1313/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Math Typesetting</title>
-      <link>http://localhost:1313/post/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Emoji Support</title>
-      <link>http://localhost:1313/post/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;div style=&#34;text-align:center;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://avatars.githubusercontent.com/u/46745326?v=4&#34; alt=&#34;Avatar&#34; style=&#34;border-radius: 50%; width: 150px; height: 150px;&#34; /&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Software Engineer&lt;/strong&gt;&lt;br&gt;&#xA;Da Nang City, Vietnam&lt;/p&gt;&#xA;&lt;a href=&#34;https://ifa-ap-01.github.io/porfolio/&#34; rel=&#34;nofollow&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://ifa-ap-01.github.io/porfolio/_next/static/media/ifaLogo.ed41333c.png&#34; alt=&#34;Contact for freelance jobs&#34; data-canonical-src=&#34;https://img.shields.io/badge/my_cv-%23E4405F.svg?&amp;amp;style=for-the-badge&#34; style=&#34;border-radius: 50%; width: 50px; height: 50px;&#34;&gt;&#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;h2 id=&#34;span-stylecoloreb8e86about-mespan&#34;&gt;&lt;span style=&#34;color:#eb8e86&#34;&gt;About me&lt;/span&gt;&lt;/h2&gt;&#xA;&lt;p&gt;I am a software engineer with over 3 years of experience developing Android apps and working with the Flutter framework. I am knowledgeable about Agile Scrum processes and have a passion for working in cross-functional teams to deliver user-centric mobile solutions. My creativity and dedication to quality help ensure the success of every project.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
