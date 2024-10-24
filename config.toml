@@ -1,6 +1,6 @@
 baseURL = "https://hugo-paper.vercel.app/"
-title = "Home"
-author = "Steve Francia"
+title = "huyhunhngc"
+author = "Huynh Ngoc Huy"
 copyright = "© 2024, huyhunhngc"
 paginate = 3
 languageCode = "en"
@@ -19,16 +19,16 @@ ignoreErrors = ["error-remote-getjson"]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-#  [markup.highlight]
-#    lineNos = true
+  [markup.highlight]
+    lineNos = true
 
 [menu]
-
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
     weight = 10
+
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
@@ -41,7 +41,6 @@ tag = "tags"
 series = "series"
 
 [privacy]
-
   [privacy.vimeo]
     disabled = false
     simple = true
@@ -59,46 +58,41 @@ series = "series"
     disabled = false
     privacyEnhanced = true
 
-[services]
-  [services.disqus]
-    shortname = 'low'     # use disqus comments
-
 [params]
   # color style
-  color = 'linen'                           # linen, wheat, gray, light
+  color = 'linen'                        
 
   # header social icons
-  twitter = 'huyhn12'               # twitter.com/YOUR_TWITTER_ID
-  github = 'huyhunhngc'                 # github.com/YOUR_GITHUB_ID
-  instagram = 'huyhunhngc'           # instagram.com/YOUR_INSTAGRAM_ID
-  linkedin = 'huynh-ngoc-huy-732a801b0'             # linkedin.com/in/YOUR_LINKEDIN_ID
-  threads = '@huyhunhngc'              # threads.net/@YOUR_THREADS_ID                             # show rss icon
+  github = 'huyhunhngc'                     
+  linkedin = 'huynh-ngoc-huy-732a801b0'            
+  twitter = 'huyhn12'             
+  threads = '@huyhunhngc'             
 
   # home page profile
   title = 'Home'
-  avatar = 'https://avatars.githubusercontent.com/u/46745326?v=4'                 # gravatar email or image url
+  avatar = 'https://avatars.githubusercontent.com/u/46745326?v=4'               
   name = 'Huynh Ngoc Huy'
-  bio = 'huyhunhngc'
+  bio = 'Blog from a software developer'
 
   # misc
-  disableHLJS = true                        # disable highlight.js
-  disablePostNavigation = false              # disable post navigation
-  monoDarkIcon = true                       # show monochrome dark mode icon
-  gravatarCdn = 'https://imgcdn.dev/i/XixMn'         # e.g. 'https://cdn.v2ex.com/gravatar/'
-  math = true                               # enable KaTeX math typesetting globally
-  localKatex = false                        # use local KaTeX js/css instead of CDN
-  favicon = "favicon.ico"                   # customize the default favicon
-  appleTouchIcon = "apple-touch-icon.png"   # customize the default Apple touch icon
-
-  # RTL supprot
-  direction = "ltr"                         # RTL support for Right-to-left languages
+  disableHLJS = true                        
+  disablePostNavigation = false            
+  monoDarkIcon = true                      
+  gravatarCdn = 'https://imgcdn.dev/i/XixMn'         
+  math = true                               
+  localKatex = false                       
+  favicon = "favicon.ico"                   
+  appleTouchIcon = "apple-touch-icon.png"   
 
   # giscus
 [params.giscus]
-  repo = 'YOUR_GISCUS_REPO'                 # see https://giscus.app for more details
-  repoId = 'YOUR_GISCUS_REPO_ID'
-  category = 'YOUR__GISCUS_CATEGORY'
-  categoryId = 'YOUR_GISCUS_CATEGORY_ID'
+  repo = 'huynhhuyhn/blog'              
+  repoId = 'R_kgDONFHczA'
+  category = 'Announcements'
+  categoryId = 'DIC_kwDONFHczM4Cjpta'
   mapping = 'pathname'
-  theme = 'light'
-  lang = 'zh-CN'
+  strict = 'strict'
+  reactionsEnabled = '1'
+  theme = 'preferred_color_scheme'
+  inputPosition = 'bottom'
+  lang = 'en'
