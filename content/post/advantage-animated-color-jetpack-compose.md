@@ -14,7 +14,7 @@ tags = [
 
 The simplest example when you want to change the background with animated color.
 
-![inspiration](https://miro.medium.com/v2/resize:fit:720/format:webp/1*YE2jQQxIXccrl4BkfV4D8Q.gif "Animating background color of composable")
+![inspiration](https://developer.android.com/static/develop/ui/compose/images/animations/animated_forever.gif "Animating background color of composable")
 
 ```kotlin
 val animatedColor by animateColorAsState(
@@ -58,4 +58,4 @@ fun animateColor(targetValue: Color): State<Color> {
 ```
 
 Let's see the results:
-![Result](https://miro.medium.com/v2/resize:fit:640/format:webp/1*vYgDb4cLyyiwkKpxs1lJYw.gif)
+<iframe src="https://drive.google.com/file/d/1stQ0YLL31mUPoxt0ZgOwmM2b7Jgi3H06/preview" width="270" height="600" allow="autoplay"></iframe>

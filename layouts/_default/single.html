@@ -2,7 +2,7 @@
 
 <article>
   <header class="mb-14">
-    <h1 class="!my-0 pb-2.5">{{ .Title }}</h1>
+    <h1 class="!my-0 pb-2.5 text-orange-500">{{ .Title }}</h1>
 
     {{ if ne .Type "page" }}
     <div class="text-xs antialiased opacity-60">
@@ -19,9 +19,9 @@
     {{ end }}
   </header>
   {{ if .Params.toc }}
-  <details style="border:1px solid gray; padding:10px; border-radius:5px; width: 100%;">
+  <details style="border:2px solid gray; padding:10px; border-radius:8px; width: 100%;">
     <summary >
-      <strong> Table of Contents</strong>
+      <a href="#"><strong>  Table of Contents</strong></a>
     </summary>
     {{.TableOfContents}}
   </details>
