@@ -13,8 +13,8 @@ comments = false
 
 <img src="../scan-me-qr.svg" alt="Description of the image" width="200" height="200"/>
 
-#### 👇 Contact IFA team for freelance jobs
+#### 👇 Contact my IFA team for freelance jobs
 
 <a href="https://ifa-ap-01.github.io/porfolio/" rel="nofollow">
-    <img src="https://ifa-ap-01.github.io/porfolio/_next/static/media/ifaLogo.ed41333c.png" alt="Contact for freelance jobs" data-canonical-src="https://img.shields.io/badge/my_cv-%23E4405F.svg?&amp;style=for-the-badge" style="border-radius: 50%; width: 80px; height: 80px;">
+    <img src="https://ifa-ap-01.github.io/porfolio/_next/static/media/ifaLogo.ed41333c.png" alt="Contact for freelance jobs" style="border-radius: 50%; width: 80px; height:80px;">
 </a>
