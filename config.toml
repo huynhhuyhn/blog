@@ -74,7 +74,7 @@ series = "series"
   title = 'Home'
   avatar = 'https://avatars.githubusercontent.com/u/46745326?v=4'               
   name = 'Huynh Ngoc Huy'
-  bio = 'Software Engineer with a love of writting user interfaces'
+  bio = 'Software Engineer with a love of mathematics, physics, and philosophy'
 
   # misc
   disableHLJS = true                        

@@ -6,5 +6,56 @@ description = "Complex compositions, such as a sequence of colors, not only the 
 tags = [
     "Kotlin", "Jetpack Compose", "Animation"
 ]
-toc = true
 +++
+
+[![Static Badge](https://img.shields.io/badge/View%20the%20article%20on%20medium-1f2328?style=for-the-badge&logo=medium&logoColor=fff)](https://medium.com/@huyhunhngc/advanced-animated-color-schemes-in-jetpack-compose-c1b9232f4c0b)
+
+### Taking inspiration from: Animate background color
+
+The simplest example when you want to change the background with animated color.
+
+![inspiration](https://miro.medium.com/v2/resize:fit:720/format:webp/1*YE2jQQxIXccrl4BkfV4D8Q.gif "Animating background color of composable")
+
+```kotlin
+val animatedColor by animateColorAsState(
+    if (animateBackgroundColor) colorGreen else colorBlue,
+    label = "color"
+)
+Column(
+    modifier = Modifier.drawBehind {
+        drawRect(animatedColor)
+    }
+) {
+    // your composable here
+}
+```
+
+### Usage
+
+Generate the corresponding color scheme and provide it to the app theme using `CompositionLocal`.
+
+```kotlin
+val colorScheme = LocalDynamicAnimatedTheme.current
+val surfaceContainer by animateColor(colorScheme.surfaceContainer)
+val primaryContainer by animateColor(colorScheme.primaryContainer)
+val secondaryColor by animateColor(colorScheme.secondary)
+val primaryColor by animateColor(colorScheme.primary)
+val tertiaryColor by animateColor(colorScheme.tertiary)
+val tertiaryContainer by animateColor(colorScheme.tertiaryContainer)
+```
+
+Create `animateColor` composable
+
+```kotlin
+@Composable
+fun animateColor(targetValue: Color): State<Color> {
+    return animateColorAsState(
+        targetValue = targetValue,
+        label = "dynamic",
+        animationSpec = tween(AnimatedThemeDuration)
+    )
+}
+```
+
+Let's see the results:
+![Result](https://miro.medium.com/v2/resize:fit:640/format:webp/1*vYgDb4cLyyiwkKpxs1lJYw.gif)
