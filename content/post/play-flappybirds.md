@@ -2,7 +2,7 @@
 author = "huyhunhngc"
 title = "Let's play Flappy Bird"
 date = "2019-07-16"
-description = "Hot flow cheat sheet: SharedFlow and StateFlow"
+description = "Flappy Bird"
 tags = [
     "Javascripts", "Canvas", "Flappy Birds"
 ]
