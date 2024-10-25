@@ -1545,6 +1545,12 @@ pre {
 
 .no-underline {
   text-decoration-line: none;
+  
+}
+
+.underline {
+  text-decoration-line: underline;
+  text-decoration-color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
 .antialiased {

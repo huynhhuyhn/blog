@@ -18,7 +18,14 @@
     </div>
     {{ end }}
   </header>
-
+  {{ if .Params.toc }}
+  <details style="border:1px solid gray; padding:10px; border-radius:5px; width: 100%;">
+    <summary >
+      <strong> Table of Contents</strong>
+    </summary>
+    {{.TableOfContents}}
+  </details>
+  {{ end }}
   <section>{{ .Content }}</section>
 
   <!-- Post Tags -->

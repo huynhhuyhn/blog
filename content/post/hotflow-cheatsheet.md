@@ -1,12 +1,14 @@
 +++
 author = "huyhunhngc"
 title = "Hot Flow Cheatsheet"
-date = "2024-10-24"
+date = "2023-10-24"
 description = "Hot flow cheat sheet: SharedFlow and StateFlow"
 tags = [
     "Kotlin", "Kotlin Flow", "Cheat sheet"
 ]
+toc = true
 +++
+
 
 ## SharedFlow
 

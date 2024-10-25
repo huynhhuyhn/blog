@@ -4,6 +4,7 @@ description = "Hugo, the world's fastest framework for building websites"
 date = "2019-02-28"
 aliases = ["about-us", "about-hugo", "contact"]
 author = "huyhunhngc"
+comments = false
 +++
 <div style="text-align:center;">
   <img src="https://avatars.githubusercontent.com/u/46745326?v=4" alt="Avatar" style="border-radius: 50%; width: 150px; height: 150px;" />
