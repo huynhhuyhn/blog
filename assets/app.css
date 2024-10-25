@@ -12,6 +12,7 @@
 @layer base {
   :root {
     --w: calc(680px + 32px * 2);
+    --font-family: "Merriweather", var(--base-font-family);
   }
 
   body {

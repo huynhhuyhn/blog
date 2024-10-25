@@ -68,14 +68,13 @@ series = "series"
   # header social icons
   github = 'huyhunhngc'                     
   linkedin = 'huynh-ngoc-huy-732a801b0'            
-  twitter = 'huyhn12'             
-  threads = '@huyhunhngc'             
+  twitter = 'huyhn12'                
 
   # home page profile
   title = 'Home'
   avatar = 'https://avatars.githubusercontent.com/u/46745326?v=4'               
   name = 'Huynh Ngoc Huy'
-  bio = 'Blog from a software developer'
+  bio = 'Software Engineer with a love of writting user interfaces'
 
   # misc
   disableHLJS = true                        

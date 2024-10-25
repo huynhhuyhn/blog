@@ -30,7 +30,7 @@ fun <T> MutableSharedFlow(
 )
 ```
 
-## shareIn
+### shareIn
 - Transforms a Flow into a **SharedFlow**.
 - Requires a **coroutine scope** as the first parameter to start collecting elements of the flow.
 - The second parameter, **started**, defines when the SharedFlow starts listening for emitted values (uses `SharingStarted`).

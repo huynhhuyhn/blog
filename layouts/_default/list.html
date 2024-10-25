@@ -48,25 +48,25 @@
 
 {{ end }}
 
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0 max-w-md mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
   {{ if gt .Weight 0 }}
   <span class="mb-1 inline-block text-xs tracking-wider text-orange-500">
     Featured
   </span>
   {{ end }}
-  <h2 class="!my-0 underline text-orange-500">{{ .Title }}</h2>
+  <h2 class="!my-0 text-orange-500">{{ .Title }}</h2>
   <p class="!my-0">{{ .Description }}</p>
-  <time class="text-xs antialiased opacity-60"
-    >{{ .Date | time.Format ":date_medium" }}</time
-  >
+  <time class="text-xs antialiased opacity-60 dark:text-gray-400">
+    {{ .Date | time.Format ":date_medium" }}
+  </time>
   {{ $single_author := or .Params.Author site.Author.name }}
-  <!---->
   {{ if $single_author }}
-  <span class="text-xs antialiased opacity-60">&middot;</span>
-  <span class="text-xs antialiased opacity-60">{{ $single_author }}</span>
+  <span class="text-xs antialiased opacity-60 dark:text-gray-400">&middot;</span>
+  <span class="text-xs antialiased opacity-60 dark:text-gray-400">{{ $single_author }}</span>
   {{ end }}
   <a class="absolute inset-0 text-[0]" href="{{ .Permalink }}">{{ .Title }}</a>
 </section>
+
 {{ end }}
 
 <!-- Main Nav -->
