@@ -18,7 +18,6 @@ comments = false
 ## <span style="color:#F97316">About me</span>
 
 Although I had a strong interest in mathematics, physics, and philosophy, I would never have thought to end up in programming, working as a **Mobile engineer**. With four years of experience working with clients from Korea, Japan, and the USA, I am confident in my ability to manage the whole application development lifecycle, from design and ideation through release.
-You can find my resume here.
 
 ## <span style="color:#F97316">Skills</span>
 
