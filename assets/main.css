@@ -70,6 +70,7 @@ html,
 */
 
 body {
+  height: 100%;
   margin: 0;
   /* 1 */
   line-height: inherit;
@@ -1562,6 +1563,10 @@ pre {
 
 .opacity-60 {
   opacity: 0.6;
+}
+
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .duration-200 {

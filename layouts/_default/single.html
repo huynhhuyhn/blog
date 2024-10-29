@@ -19,12 +19,15 @@
     {{ end }}
   </header>
   {{ if .Params.toc }}
-  <details style="border:2px solid gray; padding:10px; border-radius:8px; width: 100%;">
-    <summary >
-      <strong>  Table of Contents</strong>
+  <details style="border:2px solid gray; padding:10px; border-radius:8px; width: 100%;" open>
+    <summary style="font-size: 1rem;">
+      <strong class="opacity-80">Table of Contents</strong>
     </summary>
-    {{.TableOfContents}}
+    <div style="font-size: 0.9rem;" class="link opacity-80">
+      {{ .TableOfContents }}
+    </div>
   </details>
+  
   {{ end }}
   <section>{{ .Content }}</section>
 

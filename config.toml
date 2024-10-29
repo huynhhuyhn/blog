@@ -34,6 +34,12 @@ ignoreErrors = ["error-remote-getjson"]
     name = "Contact"
     url = "/contact/"
     weight = 10
+  
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 10
 
 timeout = 30000
 enableInlineShortcodes = true
@@ -68,13 +74,13 @@ series = "series"
   # header social icons
   github = 'huyhunhngc'                     
   linkedin = 'huynh-ngoc-huy-732a801b0'            
-  twitter = 'huyhn12'                
+  rss = true                
 
   # home page profile
   title = 'Home'
   avatar = 'https://avatars.githubusercontent.com/u/46745326?v=4'               
-  name = 'Huynh Ngoc Huy'
-  bio = 'Software Engineer with a love of mathematics, physics, and philosophy'
+  name = 'Hello!'
+  bio = "I'm Huynh Ngoc Huy. Software Engineer with a love of mathematics, physics, and philosophy."
 
   # misc
   disableHLJS = true                        

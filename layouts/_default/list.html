@@ -55,7 +55,6 @@
   </span>
   {{ end }}
   <h2 class="!my-0 text-orange-500">{{ .Title }}</h2>
-  <p class="!my-0">{{ .Description }}</p>
   <time class="text-xs antialiased opacity-60 dark:text-gray-400">
     {{ .Date | time.Format ":date_medium" }}
   </time>
@@ -64,9 +63,23 @@
   <span class="text-xs antialiased opacity-60 dark:text-gray-400">&middot;</span>
   <span class="text-xs antialiased opacity-60 dark:text-gray-400">{{ $single_author }}</span>
   {{ end }}
+  <p class="!my-0">{{ .Description }}</p>
   <a class="absolute inset-0 text-[0]" href="{{ .Permalink }}">{{ .Title }}</a>
 </section>
 
+{{ end }}
+
+{{ if and .Title (eq .Type "tags") (eq $paginator.TotalPages 0) }}
+  <span class="opacity-60">All the tags used in posts.</span><br>
+  <footer class="mt-12 flex flex-wrap">
+    {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+      {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+      <a class="link mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]" 
+      href="{{ .RelPermalink }}"><span class="opacity-80">#{{$name}}<sup class="light">{{$cnt}}</sup></span>
+      </a>
+    {{end}}
+  {{end}}
+  </footer>
 {{ end }}
 
 <!-- Main Nav -->
