@@ -15,6 +15,6 @@ comments = false
 
 #### 👇 Contact my IFA team for freelance jobs
 
-<a href="https://ifa-ap-01.github.io/porfolio/" rel="nofollow">
-    <img src="https://ifa-ap-01.github.io/porfolio/_next/static/media/ifaLogo.ed41333c.png" alt="Contact for freelance jobs" style="border-radius: 50%; width: 80px; height:80px;">
+<a href="https://ifateam.dev" rel="nofollow">
+    <img src="https://www.ifateam.dev/_next/static/media/logo.9998e55a.webp" alt="Contact for freelance jobs" style="border-radius: 50%; width: 80px; height:80px;">
 </a>

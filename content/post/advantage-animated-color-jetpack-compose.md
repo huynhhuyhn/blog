@@ -58,4 +58,4 @@ fun animateColor(targetValue: Color): State<Color> {
 ```
 
 Let's see the results:
-<iframe src="https://drive.google.com/file/d/1stQ0YLL31mUPoxt0ZgOwmM2b7Jgi3H06/preview" width="270" height="600" allow="autoplay"></iframe>
+<img srcset="https://cdn.ifateam.dev/battery_meter.gif"/>
