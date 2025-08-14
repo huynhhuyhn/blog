@@ -2,7 +2,7 @@
 author = "huyhunhngc"
 title = "Introducing Snapbyte – A Flexible Edge Caching and File Delivery System"
 date = "2025-08-01"
-description = "We’re excited to announce the launch of **Snapbyte**, a new caching and content delivery platform designed for developers and businesses that need reliable, scalable, and cost-efficient file distribution."
+description = "Snapbyte — a new caching and content delivery platform designed for developers and businesses that need reliable, scalable, and cost-efficient file distribution."
 tags = [
     "CDN", "Caching", "Intelligent"
 ]

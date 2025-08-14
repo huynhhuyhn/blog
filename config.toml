@@ -79,8 +79,8 @@ series = "series"
   # home page profile
   title = 'Home'
   avatar = 'https://avatars.githubusercontent.com/u/46745326?v=4'               
-  name = 'Hello!'
-  bio = "I'm Huynh Ngoc Huy. Software Engineer with a love of mathematics, physics, and philosophy."
+  name = 'Hello! 👋'
+  bio = "I'm Huynh Ngoc Huy. Software Engineer/Vibe Coder."
 
   # misc
   disableHLJS = true                        
